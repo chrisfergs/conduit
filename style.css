@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #950d51;
-    padding: 16px 128px 16px 128px;
+    padding: 32px 128px 0px 128px;
 }
 
 .conduit-logo {
@@ -38,8 +38,8 @@ a {
     background-color: #fbe9ee;
     justify-content: space-between;
     align-items: center;
-    padding: 64px 128px 64px 128px;
-    gap: 32px;
+    padding: 0px 128px;
+    height: 100vh;
 }
 
 .hero-content {
@@ -47,6 +47,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 600px;
+    gap: 30px;
 }
 
 .hero-slogan {
@@ -54,31 +56,142 @@ a {
     font-size: 48px;
     font-weight: bolder;
     color: #950d51;
-    margin-bottom: 16px;
+    flex: auto;
 }
 
 .hero-description {
     display: flex;
-    color: #c01860;
-    font-size: 24px;
-    margin-bottom: 16px;
+    color: #2f2e41;
+    font-size: 22px;
 }
 
 .hero-image {
-    width: 40%;
+    width: 35%;
 }
 
 .conduit-hero-image {
     width: 100%;
     height: auto;
-    flex-shrink: 0;
 }
 
+
 button {
-    padding: 8px 16px;
+    padding: 10px 16px;
     border-radius: 8px;
     background-color: #950d51;
-    color: #fbe9ee;
-    border: none;
+    color: white;
+    font-size: 18px;
+    border-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 128px 128px 128px;
+    height: auto;
+}
+
+.product-features {
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.product-card-image {
+    width: 200px;
+    height: 200px;
+}
+
+.product-card > p {
+    width: 200px;
+    text-align: center;
     font-size: 16px;
+    color: #2f2e41;
+}
+
+.customer {
+    background-color: #E5E7EB;
+    padding: 128px 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-quote {
+    font-size: 30px;
+    color: #2f2e41;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 64px;
+}
+
+.customer-title {
+    font-size: 24px;
+    color: #2f2e41;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: right;
+}
+
+h1 {
+    margin-bottom: 64px;
+    color: #2f2e41;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px;
+}
+
+.cta-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    background-color: #e63b78;
+    padding: 64px 0px;
+    color: white;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cta-title {
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.cta-body {
+    font-size: 18px;
+}
+
+.cta-button-bottom > button {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 12px 48px;
+}
+
+footer {
+    text-align: center;
+    background-color: #fbe9ee;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 64px;
+    color: #950d51;
 }
